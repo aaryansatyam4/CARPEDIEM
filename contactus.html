@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactus</title>
+    <link rel="stylesheet" href="CSS/contactus.css">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100vh;
+            background-image: url("Virat_Kohli_and_MS_Dhoni_in_Cricket_Worldcup_2019_4K_Wallpaper.jpg");
+            background-color: rgb(27, 27, 27);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-position: center top 0px;
+        }
+
+        .left {
+            display: inline-block;
+            position: fixed;
+            left: 34px;
+            top: 20px;
+            display: inline-block;
+            z-index: 100;
+        }
+
+        .left img {
+            width: 100px;
+            filter: invert(100%);
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            width: fit-content;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(61, 61, 61);
+        }
+
+        .mid {
+            display: block;
+            width: 33%;
+            margin: 20px auto;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 15px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .container {
+            margin: 106px 80px;
+            padding: 75px;
+            width: 25%;
+            border-radius: 28px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            text-align: center;
+            background: transparent;
+            font-size: 25px;
+            display: block;
+            width: 448px;
+            padding: 5px;
+            border: 2px solid rgb(155, 150, 150);
+            margin: 10px auto;
+            border-radius: 5px;
+            color: white;
+            min-height: 150px;
+            resize: vertical;
+            overflow-y: auto;
+        }
+
+        .container h1 {
+            text-align: center;
+            display: block ruby;
+        }
+
+        .form-group button {
+            display: block;
+            width: 448px;
+            margin: 20px auto;
+        }
+       footer{
+            margin-top: 150px;
+        background-color:  black;
+        position:relative;
+        width: 100%;
+        font-family: "open sans";
+        color: white;
+    }
+    .footer-content{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-content h3{
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+    }
+    .footer-content p{
+        max-width: 900px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+    }
+    .footer-bottom{
+        background-color: black;
+        width: 100vw;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .footer-bottom p{
+        font-size: 14px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+    }
+    .footer-bottom span{
+        text-transform: uppercase;
+        opacity: .4;
+        font-weight: 200;
+    }
+    .review-container {
+        margin-left: 950px;
+        
+        
+        
+    
+}
+
+.rating {
+    margin-left: 200px;
+    direction: rtl;
+    display: flex;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: flex;
+    font-size: 25px;
+    color: #ccc;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+    color: #f39c12;
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="IMG_6805.jpg" alt="">
+        </div>
+        <div class="right">
+            <button class="btn">Call us Now</button>
+            <button class="btn">Instagram</button>
+            
+        </div>
+    </header>
+    
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="project.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="contactus.html" class="active">Review us</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>WRITE REVIEW</h1>
+        <form action="review.php">
+            <div class="form-group">
+                <textarea name="" id="" placeholder="ENTER REVIEW"></textarea>
+                <button class="btn">SUBMIT</button>
+            </div>
+        </form>
+        <div class="review-container">
+            <h1>Rate The Service</h1>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">&#9733;</label>
+            </div>
+            <p id="result"></p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <h3>CARPEDIEM</h3>
+            <p>CarpeDiem : Elevate Your Play. From inspiring apparel to tailored fitness programs, we empower you to conquer every moment, one rep at a time.</p>
+            <div class="contact">
+                Contact phone-number:+91 8789950364
+            </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021 CarpeDiem. designed by <span>CarpeDiem</span></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
